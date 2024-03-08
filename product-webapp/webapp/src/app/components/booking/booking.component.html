@@ -1,0 +1,59 @@
+<div class="body">
+  <div class="example-form">
+    <h2 class="heading" style="color: black;">Add your booking</h2>
+    
+
+    <input
+      type="text"
+      required
+      placeholder="Enter Id"
+      [(ngModel)]="booking.bookingId"
+    />
+
+    <input
+      type="text"
+      required
+      placeholder="Enter Customer ID"
+      [(ngModel)]="booking.cusId"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter Hotel Id"
+      [(ngModel)]="booking.hotId"
+    />
+
+    <input
+      type="date"
+      required
+      placeholder="Enter Start Date"
+      [(ngModel)]="booking.startDate"
+    />
+    <input
+      type="date"
+      required
+      placeholder="Enter End Date"
+      [(ngModel)]="booking.endDate"
+    />
+
+    <button (click)="handleButtonClick()">Done</button>
+
+    <!-- <button (click)="openPopup()">Open Popup</button> -->
+    <app-payment *ngIf="popupVisible" (close)="closePopup()"></app-payment>
+    
+  </div>
+  <!-- <div class="image-container">
+    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdGVsfGVufDB8fDB8fHww&w=1000&q=80" alt="Image description" />
+  
+  </div> -->
+
+ 
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+</div>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+

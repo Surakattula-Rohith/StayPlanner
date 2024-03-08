@@ -1,0 +1,21 @@
+<h4 style="text-align: center; font-size: 24px; font-weight: bold;" >Popular Hotels</h4>
+<div class="card-container">
+  
+  <div class="card" *ngFor="let tempHotel of views">
+    <div class="card-header">      
+      <div class="card-name">{{ tempHotel.hotelName }}</div>
+      <!-- <div class="card-image"></div> -->
+      <img src="https://www.home-designing.com/wp-content/uploads/2023/04/modern-day-houses-600x600.jpg" alt="Hotel Icon"  class="hotel-icon" />
+     
+    </div>
+    <div class="card-content">
+      <p>Hotel Address: {{ tempHotel.hotelId }}</p>      
+      <p>Hotel Address: {{ tempHotel.hotelAddress }}</p>
+      <p>Hotel Location: {{ tempHotel.location }}</p>
+      <p>Hotel Available: {{ tempHotel.availability }}</p>
+      <p>Hotel Price: {{ tempHotel.price }}</p>
+    <!-- </div>
+
+    <button class="card-button" (onclick)="bookHotel(tempHotel)">Book Now</button>
+  </div> -->
+</div>

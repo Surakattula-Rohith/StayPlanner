@@ -1,0 +1,73 @@
+<div class="custom-container">
+  <div class="custom-form">
+    <div class="container mt-3">
+      <h2>Register Customer</h2>
+
+      <form [formGroup]="saveForm" (ngSubmit)="registerUser(saveForm)">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            formControlName="mailId"
+            placeholder="name@example.com"
+          />
+          <small
+            *ngIf="
+              saveForm.get('mailId')?.touched &&
+              saveForm.get('mailId')?.hasError('required')
+            "
+          >
+            Email Is Required
+          </small>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >UserName</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            formControlName="userName"
+            placeholder="John Doe"
+          />
+          <small
+            *ngIf="
+              saveForm.get('userName')?.touched &&
+              saveForm.get('userName')?.hasError('required')
+            "
+          >
+            UserName is Required
+          </small>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            formControlName="password"
+            placeholder="Enter your password here."
+          />
+          <small
+            *ngIf="
+              saveForm.get('password')?.touched &&
+              saveForm.get('password')?.hasError('required')
+            "
+          >
+            Password Is Required
+          </small>
+        </div>
+
+        <button class="custom-btn" [disabled]="saveForm.invalid">
+          Register
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

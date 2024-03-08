@@ -1,0 +1,46 @@
+<div style="position: fixed; width: 100vw">
+  <mat-toolbar color="primary">
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
+    >
+      <mat-icon> </mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" class="matMenulist">
+      <button mat-menu-item class="custom-menu-item">
+        <a routerLink="admin-register">Admin Register</a>
+      </button>
+      <button mat-menu-item class="custom-menu-item">
+        <a routerLink="admin-login">Admin Login</a>
+      </button>
+      <button mat-menu-item class="custom-menu-item">
+        <a routerLink="admin-homepage">Admin HomePage</a>
+      </button>
+      <button mat-menu-item class="custom-menu-item">
+        <a routerLink="admin-add-admin">Add-New-Admin</a>
+      </button>
+      <button mat-menu-item class="custom-menu-item">
+        <a routerLink="admin-update-profile">Update Current Admin</a>
+      </button>
+      <button mat-menu-item class="custom-menu-item">
+        <a routerLink="admin-review-hotels">Review Hotels</a>
+      </button>
+      <button mat-menu-item class="custom-menu-item">
+        <a (click)="onlogout()">Admin-Logout</a>
+      </button>
+    </mat-menu>
+    <span>
+      
+      Stay-Planner</span
+    >
+    <span class="example-spacer"></span>
+
+    <button class="btn btn-warning m-2" (click)="navigateToCustomer()">
+      Customer
+    </button>
+    <button class="btn btn-warning m-2" (click)="navigateToHotelOwner()">
+      HotelOwner
+    </button>
+  </mat-toolbar>
+</div>

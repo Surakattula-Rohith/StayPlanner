@@ -1,0 +1,88 @@
+.flex-container {
+    display: flex;  
+    flex-wrap: wrap;       /* Set the container to use flex layout */
+    flex-direction: row;  /* Arrange items in a row */
+    justify-content: space-between; /* Distribute items along the main axis 
+    align-items: center; /* Align items vertically in the center */
+}
+
+.body{
+    /* background-image: url('https://wallpapershome.com/images/pages/pic_h/560.jpg'); */
+    /* background-size: cover;  */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+
+    background-image: url('https://img.freepik.com/free-vector/paper-style-luxury-background_23-2148982497.jpg?size=626&ext=jpg&ga=GA1.2.236706575.1692697341&semt=ais'); 
+    background-size: cover;
+    background-position: center;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+
+}
+.profile-box {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #edebf0, #ffc107);
+    padding: 20px;
+    width: 220px;
+    margin: 20px ;
+
+  }
+
+  .profile-icon {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    /* background-color: #673ab7; */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFMIFJlGKJPd4UjZoj7XVsD1mPoIsBcVBofQ&usqp=CAU');
+    background-size: cover; 
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    border-radius: 50%;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .content-box {
+    text-align: center;
+  }
+
+  .content-box h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  .content-box p {
+    font-size: 12px;
+    color: black;
+    margin: 4px 0;
+  }
+
+  .action-button {
+    margin-top: 12px;
+    padding: 6px 12px;
+    background-color: #5f70f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .action-button:hover {
+    background-color: #f39c12;
+  }

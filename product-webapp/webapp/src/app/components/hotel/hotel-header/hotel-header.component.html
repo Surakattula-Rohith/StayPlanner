@@ -1,0 +1,57 @@
+<div style="position: fixed; width : 100vw;">
+    <mat-toolbar color="primary">
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+      >
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" class="matMenulist">
+        <button mat-menu-item class="custom-menu-item">
+          <a routerLink="hotel-register">Register</a>
+        </button>
+        <button mat-menu-item  class="custom-menu-item">
+          <a routerLink="hotel-login">Login</a>
+        </button>
+        <button mat-menu-item class="custom-menu-item">
+          <a routerLink="hotel-homepage">Go to HomePage</a>
+        </button>
+        <button mat-menu-item class="custom-menu-item">
+          <a routerLink="hotel-add-owner">Add Your details</a>
+        </button>
+        <button mat-menu-item class="custom-menu-item">
+          <a routerLink="hotel-addbyownerid-hotel">Add your Hotel</a>
+        </button>
+        <button mat-menu-item class="custom-menu-item">
+          <a routerLink="hotel-addbyhotelid-hotel">Add Rooms</a>
+        </button>
+       
+        <button mat-menu-item class="custom-menu-item">
+          <a routerLink="hotel-get-owner">List of Owners</a>
+        </button>
+        <button mat-menu-item class="custom-menu-item">
+          <a routerLink="hotel-get-hotel">List of Hotels</a>
+        </button>
+        <button mat-menu-item class="custom-menu-item">
+          <a routerLink="hotel-get-room">List of Rooms</a>
+        </button>
+      
+        <button mat-menu-item class="custom-menu-item">
+          <a routerLink="hotel-update-hotel">Update your Hotel</a>
+        </button>
+        
+        <button mat-menu-item class="custom-menu-item">
+          <a (click)="onlogout()">HotelOwner-Logout</a>
+        </button>
+      </mat-menu>
+      <span>Stay-Planner</span>
+      <span class="example-spacer"></span>
+  
+      
+      <button class="btn btn-warning m-2" (click)="navigateToAdmin()">Admin</button>
+      <button class="btn btn-warning m-2"  (click)="navigateToCustomer()">Customer</button>
+      
+    </mat-toolbar>
+  </div>
+  

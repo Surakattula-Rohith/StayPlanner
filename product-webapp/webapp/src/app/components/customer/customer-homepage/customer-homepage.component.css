@@ -1,0 +1,57 @@
+/* .heading{
+  
+} */
+/* Add this CSS code to your stylesheets */
+
+/* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the main welcome header */
+  h1 {
+    font-size: 24px;
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-top: 20px;
+  padding: 10px; /* Add padding to create space inside the box */
+ 
+  
+  }
+  
+  /* Styling for the container divs */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Styling for the individual app components */
+  .app-component {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add some spacing between components */
+  .app-component + .app-component {
+    margin-left: 20px;
+  }
+  
+  /* Additional spacing */
+  .space {
+    margin-top: 50px;
+  }
+  
+  /* Clearfix for any floats within the container */
+  .container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

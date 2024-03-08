@@ -1,0 +1,11 @@
+.table{
+    margin: 10px;
+
+}
+
+.warp{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    
+  }

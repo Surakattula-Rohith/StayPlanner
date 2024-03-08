@@ -1,0 +1,71 @@
+.custom-container {
+    /* background-image: url('https://www.home-designing.com/wp-content/uploads/2022/09/upholstered-headboard.jpg');  */
+    background-size: cover;
+    background-color: rgba(247, 241, 207, 0.8); 
+    background-blend-mode: lighten;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72vh;
+    overflow: hidden;
+  
+}
+
+.custom-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/321750337.jpg?k=6e72152d45f6bfcd0591229ba96de6501fba3cb7d6fc92de30eb3993efe1848f&o=&hp=1');
+    transition: all 0.3s ease; /* Add transition for smooth effect */
+    /* background-color: rgba(252, 244, 201, 0.8);  */
+    /* background-blend-mode: lighten; */
+}
+
+.custom-form:hover {
+    background-color: rgba(255, 255, 255, 1); /* Adjust background color on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Adjust box shadow on hover */
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+.custom-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.custom-form .form-control {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 8px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #fff; /* Adding background color to form controls */
+}
+
+.custom-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.6);
+    outline: none;
+}
+
+.custom-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+.custom-btn:disabled {
+    background-color: #ccc;
+    opacity: 0.8;
+    cursor: not-allowed;
+}

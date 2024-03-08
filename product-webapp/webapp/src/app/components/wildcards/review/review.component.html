@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+</head>
+<body>
+    <div class="container" >
+        <h1 style="font-size: 23px"  >Overall Rating</h1>
+        <ngb-rating [max]="5" [(rate)]="ratingcount1" [formControl]="ratingcontrol1"></ngb-rating>
+        <h2 class="rating">Rate: {{ratingcount1}}</h2>
+
+        <br><h1 style="font-size: 20px" >Maintenance</h1>
+        <ngb-rating [max]="5" [(rate)]="ratingcount2"  [formControl]="ratingcontrol4"></ngb-rating>  
+        <h2 class="rating">Rate:{{ratingcount2}}</h2>
+        
+        
+        <h1 style="font-size: 20px" >Affordability</h1>
+        <ngb-rating [max]="5" [(rate)]="ratingcount3"  [formControl]="ratingcontrol3"></ngb-rating> 
+        <h2 class="rating">Rate:{{ratingcount3}}</h2>
+        
+        <br>
+        <br>
+        
+        <h1 style="font-size: 20px" >Wifi</h1>
+        <ngb-rating [max]="5" [(rate)]="ratingcount4"  [formControl]="ratingcontrol4"></ngb-rating>  
+        <h2 class="rating">Rate:{{ratingcount4}}</h2>
+        
+        <br> 
+        <br>
+
+        <form>
+            <div class="form-group">
+                <label for="reviewDesc" style="font-size: 29px" style="font-weight: bold">Leave a Review</label>
+                <input type="text" [(ngModel)]="reviewDesc" [ngModelOptions]="{ standalone: true }" class="form-control" id="reviewDesc">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="register()">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+

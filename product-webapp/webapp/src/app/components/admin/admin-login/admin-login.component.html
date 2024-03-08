@@ -1,0 +1,49 @@
+<div class="custom-container">
+  <div class="custom-form">
+    <div class="container mt-3 body">
+      <h2>Login as an Admin</h2>
+
+      <form [formGroup]="loginForm" (ngSubmit)="loginUser(loginForm)">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            formControlName="mailId"
+            placeholder="name@example.com"
+          />
+          <small
+            *ngIf="
+              loginForm.get('mailId')?.touched &&
+              loginForm.get('mailId')?.hasError('required')
+            "
+          >
+            Email Is Required
+          </small>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            formControlName="password"
+            placeholder="Enter your password here."
+          />
+          <small
+            *ngIf="
+              loginForm.get('password')?.touched &&
+              loginForm.get('password')?.hasError('required')
+            "
+          >
+            Password Is Required
+          </small>
+        </div>
+        <button class="custom-btn" [disabled]="loginForm.invalid">Login</button>
+      </form>
+    </div>
+  </div>
+</div>

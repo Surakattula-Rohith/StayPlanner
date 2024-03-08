@@ -1,0 +1,38 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Application Fee</th>
+        <th scope="col">SecretId</th>
+        <th scope="col">Razorpay Order Id</th>
+        <th scope="col">SecretKey</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+    <tbody>
+      <tr *ngFor="let item of getJsonValue">
+        <td>{{ item.psName }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.applicationFee}}</td>
+        <td>{{ item.secretId }}</td>
+        <td>{{ item.razorpayOrderId}}</td>
+        <td>{{ item.secretKey}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- <div class="container mt-4">
+      <div class="warp">
+          <mat-card class="example-card m-3" *ngFor="let item of getJsonValue">
+              <mat-card-content>
+                  <h2>Name:{{item.psName}}</h2>
+                  <h2>Email:{{item.email}}</h2>
+                  <h2>Application Fee:{{item.applicationFee}}</h2>
+                  <h2>SecretId:{{item.secretId}}</h2>
+                  <h2>Razorpay Order Id:{{item.razorpayOrderId}}</h2>
+                  <h2>SecretKey:{{item.secretKey}}</h2>
+              </mat-card-content>
+          </mat-card>
+      </div>
+    </div> -->

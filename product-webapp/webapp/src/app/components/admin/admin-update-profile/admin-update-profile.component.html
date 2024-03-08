@@ -1,0 +1,50 @@
+<div class="body">
+  <div class="example-form">
+    <h2 class="heading ">Update Admin</h2>
+    <input
+      type="number"
+      required
+      placeholder="Enter Admin ID"
+      [(ngModel)]="admin.adminId"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter Admin Number"
+      [(ngModel)]="admin.aadhaarNo"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter Admin Name"
+      [(ngModel)]="admin.adminName"
+    />
+    <input
+      type="email"
+      required
+      placeholder="Enter Admin Email"
+      [(ngModel)]="admin.adminEmail"
+    />
+    <input
+      type="email"
+      required
+      placeholder="Enter Moblie Number"
+      [(ngModel)]="admin.mblNo"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter Date-Of-Birth"
+      [(ngModel)]="admin.dob"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter Admin Address"
+      [(ngModel)]="admin.address"
+    />
+    <button (click)="updateAdmin()">Done</button>
+  </div>
+  <br />
+  <br /><br /><br /><br /><br /><br />
+</div>

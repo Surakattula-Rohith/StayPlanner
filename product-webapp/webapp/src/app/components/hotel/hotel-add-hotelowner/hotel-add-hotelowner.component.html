@@ -1,0 +1,438 @@
+<!-- <br /><button mat-raised-button color="primary" (click)="saveData()">
+  Save complete Data
+</button>
+
+<div class="container bg-light p-3">
+  <div class="container border">
+    <div class="container mt-3">
+      <h2 class="text-center mt-2 p-3 bg-dark text-white">
+        Enter New Hotel Owner details
+      </h2>
+      <div class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Enter HotelOwner Id</mat-label>
+          <input
+            type="text"
+            required
+            matInput
+            placeholder="Ex. 101"
+            [(ngModel)]="hotelOwner.ownerId"
+          />
+        </mat-form-field>
+
+        <div class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Enter HotelOwner email</mat-label>
+            <input
+              type="email"
+              required
+              matInput
+              placeholder="Ex. john@mail.com"
+              [(ngModel)]="hotelOwner.email"
+            />
+          </mat-form-field>
+        </div>
+        
+        <mat-form-field class="example-full-width">
+          <mat-label>Enter HotelOwner Name</mat-label>
+          <input
+            type="text"
+            required
+            matInput
+            placeholder="Ex. John Doe."
+            [(ngModel)]="hotelOwner.name"
+          />
+        </mat-form-field>
+
+        <div class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Enter HotelOwner Mobile Number</mat-label>
+            <input
+              type="text"
+              required
+              matInput
+              placeholder="Ex. 9420932328"
+              [(ngModel)]="hotelOwner.mobileNo"
+            />
+          </mat-form-field>
+        </div>
+
+        <div class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Enter HotelOwner ReferalCode</mat-label>
+            <input
+              type="text"
+              required
+              matInput
+              placeholder="Ex. BHARAT-123"
+              [(ngModel)]="hotelOwner.referalCode"
+            />
+          </mat-form-field>
+        </div>
+        <div class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Enter HotelOwner Address</mat-label>
+            <input
+              type="text"
+              required
+              matInput
+              placeholder="Ex. Goa"
+              [(ngModel)]="hotelOwner.addr"
+            />
+          </mat-form-field>
+        </div>
+        <div class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Enter HotelOwner DOB</mat-label>
+            <input
+              type="text"
+              required
+              matInput
+              placeholder="Ex. 20th July"
+              [(ngModel)]="hotelOwner.dob"
+            />
+          </mat-form-field>
+        </div>
+        <div class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Enter Hotels avg. Price</mat-label>
+            <input
+              type="text"
+              required
+              matInput
+              placeholder="Ex. 50,000"
+              [(ngModel)]="hotelOwner.price"
+            />
+          </mat-form-field>
+        </div>          
+      </div>
+      <br />
+      <br /><br /><br /><br /><br /><br />
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container bg-light p-3">
+    <div class="container border">
+      <div class="container mt-3">
+        <h2 class="text-center mt-2 p-3 bg-dark text-white">
+          Enter New Hotel details
+        </h2>
+        <div class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Enter Hotel Id</mat-label>
+            <input
+              type="text"
+              required
+              matInput
+              placeholder="Ex. 101"
+              [(ngModel)]="hotel.hotelId"
+            />
+          </mat-form-field>
+  
+          <div class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter Hotel Name</mat-label>
+              <input
+                type="email"
+                required
+                matInput
+                placeholder="Ex. john@mail.com"
+                [(ngModel)]="hotel.hotelName"
+              />
+            </mat-form-field>
+          </div>
+          <mat-form-field class="example-full-width">
+            <mat-label>Enter HotelAddress</mat-label>
+            <input
+              type="text"
+              required
+              matInput
+              placeholder="Ex. John Doe."
+              [(ngModel)]="hotel.hotelAddress"
+            />
+          </mat-form-field>
+  
+          <div class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter Hotel location</mat-label>
+              <input
+                type="text"
+                required
+                matInput
+                placeholder="Ex. 9420932328"
+                [(ngModel)]="hotel.location"
+              />
+            </mat-form-field>
+          </div>
+  
+          <div class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter HotelOwner ReferalCode</mat-label>
+              <input
+                type="text"
+                required
+                matInput
+                placeholder="Ex. BHARAT-123"
+                [(ngModel)]="hotel.referalCode"
+              />
+            </mat-form-field>
+          </div>
+          
+          <div class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter Hotels avg. Price</mat-label>
+              <input
+                type="text"
+                required
+                matInput
+                placeholder="Ex. 50,000"
+                [(ngModel)]="hotel.price"
+              />
+            </mat-form-field>
+          </div>
+          <br /><button mat-raised-button color="primary" (click)="addHotel()">
+              Save Hotel Data
+            </button>
+            
+        </div>
+        <br />
+        <br /><br /><br /><br /><br /><br />
+      </div>
+    </div>
+  </div>
+  
+  
+<div class="container bg-light p-3">
+    <div class="container border">
+      <div class="container mt-3">
+        <h2 class="text-center mt-2 p-3 bg-dark text-white">
+          Enter New Room details
+        </h2>
+        <div class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Enter Room Id</mat-label>
+            <input
+              type="text"
+              required
+              matInput
+              placeholder="Ex. 101"
+              [(ngModel)]="room.roomId"
+            />
+          </mat-form-field>
+  
+          <div class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter Room roomType</mat-label>
+              <input
+                type="email"
+                required
+                matInput
+                placeholder="Ex. john@mail.com"
+                [(ngModel)]="room.roomType"
+              />
+            </mat-form-field>
+          </div>
+          
+          <mat-form-field class="example-full-width">
+            <mat-label>Enter Room bedType</mat-label>
+            <input
+              type="text"
+              required
+              matInput
+              placeholder="Ex. John Doe."
+              [(ngModel)]="room.bedType"
+            />
+          </mat-form-field>
+  
+        
+         
+          <div class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter Room Price</mat-label>
+              <input
+                type="text"
+                required
+                matInput
+                placeholder="Ex. 50,000"
+                [(ngModel)]="room.price"
+              />
+            </mat-form-field>
+          </div>
+          <br /><button mat-raised-button color="primary" (click)="addRoom()">
+              Save Room Data
+            </button>
+        </div>
+        <br />
+        <br /><br /><br /><br /><br /><br />
+      </div>
+    </div>
+  </div>
+  
+  
+    
+   -->
+
+<div class="body">
+  <div class="example-form">
+    <h2 class="heading">Hotel Owner Details</h2>
+    <input
+      type="text"
+      required
+      placeholder="Enter HotelOwner Id"
+      [(ngModel)]="hotelOwner.ownerId"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter HotelOwner Email"
+      [(ngModel)]="hotelOwner.email"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter HotelOwner Name"
+      [(ngModel)]="hotelOwner.name"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter HotelOwner Mobile"
+      [(ngModel)]="hotelOwner.mobileNo"
+    />
+
+    <input
+      type="text"
+      required
+      placeholder="Enter HotelOwner ReferalCode"
+      [(ngModel)]="hotelOwner.referalCode"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter HotelOwner Address"
+      [(ngModel)]="hotelOwner.addr"
+    />
+
+    <input
+      type="text"
+      required
+      placeholder="Enter HotelOwner Date Of Birth"
+      [(ngModel)]="hotelOwner.dob"
+    />
+
+    <input
+      type="text"
+      required
+      placeholder="Enter Price"
+      [(ngModel)]="hotelOwner.price"
+    />
+  </div>
+</div>
+
+<div class="body">
+  <div class="example-form">
+    <h2 class="heading">Add Hotel Details</h2>
+    <input
+      type="text"
+      required
+      placeholder="Enter Hotel Id"
+      [(ngModel)]="hotel.hotelId"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter hotel Name"
+      [(ngModel)]="hotel.hotelName"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter Hotel Address"
+      [(ngModel)]="hotel.hotelAddress"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter Hotel Referal Code"
+      [(ngModel)]="hotel.referalCode"
+    />
+
+    <input
+      type="text"
+      required
+      placeholder="Enter Hotel gstNumber"
+      [(ngModel)]="hotel.gstNumber"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter Hotel Location"
+      [(ngModel)]="hotel.location"
+    />
+
+    <input
+      type="text"
+      required
+      placeholder="Enter Hotel avalibility"
+      [(ngModel)]="hotel.availability"
+    />
+
+    <input
+      type="text"
+      required
+      placeholder="Enter Hotel Nearby Transport"
+      [(ngModel)]="hotel.NearbyTransportation"
+    />
+
+    <input
+      type="number"
+      required
+      placeholder="Enter Hotel Price"
+      [(ngModel)]="hotel.price"
+    />
+
+  </div>
+</div>
+
+<div class="body">
+  <div class="example-form">
+    <h2 class="heading">Add Room Details</h2>
+    <input
+      type="text"
+      required
+      placeholder="Enter Room Id"
+      [(ngModel)]="room.roomId"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter BedType"
+      [(ngModel)]="room.bedType"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter Room Type"
+      [(ngModel)]="room.roomType"
+    />
+    <input
+      type="text"
+      required
+      placeholder="Enter Room Price"
+      [(ngModel)]="room.price"
+    />
+  </div>
+  <button (click)="saveData()">Save complete Data</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+</div>
+
+

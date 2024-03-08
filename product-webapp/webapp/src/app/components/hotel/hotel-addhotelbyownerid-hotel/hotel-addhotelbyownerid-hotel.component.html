@@ -1,0 +1,288 @@
+<div class="body">
+  <form class="example-form" (ngSubmit)="getbyid(box.value)">
+    <h2 class="heading">Hotel Owner Details</h2>
+    <input
+      type="text"
+      required
+      #box
+      matInput
+      placeholder="Enter owner Id"
+      name="ownerId"
+      [(ngModel)]="ownerId"
+      pattern="[A-Za-z0-9]+"
+    />
+    <br />
+    <button type="submit" class="btn btn-primary">Enter</button>
+  </form>
+</div>
+
+<div class="body">
+  <div class="example-form">
+    <h2 class="heading">Hotel Details</h2>
+    <form
+      (ngSubmit)="submitForm()"
+      enctype="multipart/form-data"
+      class="example-form"
+    >
+    <input
+    type="text"
+    required
+    matInput
+    placeholder="Enter Hotel Number"
+    name="hotelId"
+    [(ngModel)]="hotelId"
+    pattern="[A-Za-z0-9]+"
+  />
+  
+  <input
+    type="text"
+    required
+    matInput
+    placeholder="Enter Hotel Name"
+    name="hotelName"
+    [(ngModel)]="hotelName"
+    
+  />
+  
+  <input
+    type="text"
+    required
+    matInput
+    placeholder="Enter Hotel Address"
+    name="hotelAddress"
+    [(ngModel)]="hotelAddress"
+    
+  />
+ 
+  
+  <input
+    type="text"
+    required
+    matInput
+    placeholder="Enter Referal"
+    name="referalcode"
+    [(ngModel)]="referalCode"
+    pattern="[A-Za-z0-9]+"
+  />
+  
+  <input
+    type="text"
+    required
+    matInput
+    placeholder="Enter NearbyTraspotation"
+    name="nearbyTraspotation"
+    [(ngModel)]="nearbyTraspotation"
+   
+  />
+  
+  <input
+    type="text"
+    required
+    matInput
+    placeholder="Enter Location"
+    name="location"
+    [(ngModel)]="location"
+  
+  />
+  
+  <input
+    type="text"
+    required
+    matInput
+    placeholder="Enter Maintanance"
+    name="maintanance"
+    [(ngModel)]="maintanance"
+    
+  />
+  
+  <input
+    type="text"
+    required
+    matInput
+    placeholder="Enter Price"
+    name="price"
+    [(ngModel)]="price"
+    pattern="[0-9]"
+  />
+  
+      <div class="form-group col-md-20">
+        <input
+          type="file"
+          class="form-control"
+          name="photo"
+          (change)="imageUpload($event)"
+          required
+        />
+      </div>
+
+      <br /><br />
+      <button type="submit" class="btn btn-primary">Add Hotel</button>
+    </form>
+  </div>
+  <br /><br /><br /><br /><br />
+</div>
+
+<!-- <br><br><br><br>
+    <div class="container mt-10 bg-light p-3">
+      <div class="container border">
+        <div class="container mt-3">
+          <h2 class="text-center mt-2 p-3 bg-dark text-white">
+            Enter Owner Data
+          </h2>
+  <div class="main mt-3">
+      <form class="example-form"  (ngSubmit)="getbyid(box.value)">
+        <mat-form-field class="example-full-width">
+          <mat-label>OwnerId</mat-label>
+          <input matInput placeholder="Enter Owner Id" required #box >
+        </mat-form-field>
+        <br>
+        <button type="submit" mat-raised-button color="primary">Enter</button>
+      </form>
+    </div>
+        </div>
+      </div>
+  </div>
+       -->
+<!-- <div class="container bg-light p-3">
+        <div class="container border">
+          <div class="container mt-3">
+            <h2 class="text-center mt-2 p-3 bg-dark text-white">
+              Enter New Hotel details
+            </h2>
+            <form (ngSubmit)="submitForm()" enctype="multipart/form-data" class="example-form">
+              <mat-form-field class="example-full-width">
+                <mat-label>Enter Hotel Id</mat-label>
+                <input
+                  type="text"
+                  required
+                  matInput
+                  placeholder="Ex. 101"
+                  name="hotelId"
+                  [(ngModel)]="hotelId"
+                />
+              </mat-form-field>
+      
+              <div class="example-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Enter Hotel Name</mat-label>
+                  <input
+                    type="email"
+                    required
+                    matInput
+                    placeholder="Ex. john@mail.com"
+                    name="hotelName"
+                    [(ngModel)]="hotelName"
+                  />
+                </mat-form-field>
+              </div>
+           
+              <mat-form-field class="example-full-width">
+                <mat-label>Enter HotelAddress</mat-label>
+                <input
+                  type="text"
+                  required
+                  matInput
+                  placeholder="Ex. John Doe."
+                  name="hotelAddress"
+                  [(ngModel)]="hotelAddress"
+                />
+              </mat-form-field>
+    
+         
+              <div>
+              <mat-form-field class="example-full-width">
+                <mat-label>Enter Near Restorent</mat-label>
+                <input
+                  type="text"
+                  required
+                  matInput
+                  placeholder="Ex. John Doe."
+                  name="restorent"
+                  [(ngModel)]="restorent"
+                />
+              </mat-form-field>
+          </div>
+              <mat-form-field class="example-full-width">
+                <mat-label>Enter NearbyTraspotation</mat-label>
+                <input
+                  type="text"
+                  required
+                  matInput
+                  placeholder="Ex. John Doe."
+                  name=" nearbyTraspotation"
+                  [(ngModel)]=" nearbyTraspotation"
+                />
+              </mat-form-field>
+      
+              <div class="example-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Enter Hotel location</mat-label>
+                  <input
+                    type="text"
+                    required
+                    matInput
+                    placeholder="Ex. 9420932328"
+                    name="location"
+                    [(ngModel)]="location"
+                  />
+                </mat-form-field>
+              </div>
+      
+              <div class="example-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Enter HotelOwner ReferalCode</mat-label>
+                  <input
+                    type="text"
+                    required
+                    matInput
+                    placeholder="Ex. BHARAT-123"
+                    name="referalCode"
+                    [(ngModel)]="referalCode"
+                  />
+                </mat-form-field>
+              </div>
+              <div class="example-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Enter Hotel maintanance</mat-label>
+                  <input
+                    type="text"
+                    required
+                    matInput
+                    placeholder="Ex. 20th July"
+                    name="maintanance"
+                    [(ngModel)]="maintanance"
+                  />
+                </mat-form-field>
+              </div>
+              <div class="example-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Enter Hotels avg. Price</mat-label>
+                  <input
+                    type="text"
+                    required
+                    matInput
+                    placeholder="Ex. 50,000"
+                    name="price"
+                    [(ngModel)]="price"
+                  />
+                </mat-form-field>
+                
+              </div>
+              <div class="form-group col-md-6">
+                <label for="photo">Upload Photo</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  name="photo"
+                  (change)="imageUpload($event)" 
+                  required
+                />
+              </div>
+              <br /><br />
+              <button type="submit" mat-raised-button color="primary">Add Hotel</button>
+            </form>
+            <br />
+            <br /><br /><br /><br /><br />
+          </div>
+        </div>
+      </div> -->

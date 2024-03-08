@@ -1,0 +1,32 @@
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+    /* background-image: url('https://img.freepik.com/free-vector/dark-blue-waves-dots-abstract-background_79603-879.jpg?w=996&t=st=1692769212~exp=1692769812~hmac=7c4d1f809c408ded9d8702b455928009a3f961c421762fd4f810f62107c05a94'); */
+    background-size: cover;
+    /* background-blend-mode: lighten;
+    background-color: rgba(150, 189, 252, 0.8);  */
+    background-position: center;
+    /* margin-left: 50px; */
+    max-width: 100%;
+
+  }
+  
+  .card-container {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 300px;
+    
+  }
+  
+  /* Rest of your existing styles */
+ 
+  .btn1{
+    background-color: rgb(131, 130, 133);
+  }
+  

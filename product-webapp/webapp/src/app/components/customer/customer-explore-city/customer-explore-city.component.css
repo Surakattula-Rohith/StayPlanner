@@ -1,0 +1,97 @@
+/* styles.css */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/* Add this CSS to your stylesheet */
+
+.hotel-icon {
+  width: 50px; /* Adjust the width to your preference */
+  height: 50px; /* Adjust the height to your preference */
+  border-radius: 50%; /* Make the image round */
+  object-fit: cover; /* Ensure the image fills the circle */
+}
+
+
+
+.card {
+  width: 300px;
+  border: none;
+  border-radius: 8px;
+  /* background: linear-gradient(to bottom, #c2f91b, #216ffe); */
+  background-image: url('https://www.home-designing.com/wp-content/uploads/2023/04/modern-day-houses-600x600.jpg');
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-name {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.card-image {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  padding: 16px;
+  color: white;
+}
+
+.card-content p {
+  margin: 8px 0;
+}
+
+.card-button {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 16px; /* Added padding to the button */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: auto;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.card-button:hover {
+  background-color: #4eea16;
+}
+
+/* Added margin to the card */
+.card {
+  margin-bottom: 20px;
+}
+
+.h4{
+  font-size: 24px;
+  
+}

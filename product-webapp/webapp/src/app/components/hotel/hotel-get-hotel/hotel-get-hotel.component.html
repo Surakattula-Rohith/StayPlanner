@@ -1,0 +1,15 @@
+<div class="top">
+  <div class="warp">
+    <div class="example-card" *ngFor="let item of getJsonValue">
+      <img class="image" src ="data:image/jpeg;base64,{{item.hotelImage}}">
+      <h2>Hotel Number:{{ item.hotelId }}</h2>
+      <h2>Hotel Name:{{ item.hotelName }}</h2>
+      <h2>Hotel Address:{{ item.hotelAddress }}</h2>
+      <h2>Location:{{ item.location }}</h2>
+      <h2>Referal Code:{{ item.referalCode }}</h2>
+      <h2>Maintanance:{{ item.maintanance }}</h2>
+      <h2>Price:{{ item.price }}</h2>
+      <button (click)="deletehotel(item.hotelId)">Delete</button>
+    </div>
+  </div>
+</div>

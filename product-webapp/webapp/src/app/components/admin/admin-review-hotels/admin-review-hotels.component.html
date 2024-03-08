@@ -1,0 +1,25 @@
+<div class="body">
+  <h2 class="container">Welcome {{ admin.adminName }}</h2>
+  <div class="flex-container">
+    <div *ngFor="let hotelOwner of hotelOwnerlist">
+      <div class="profile-box">
+        <div class="profile-icon">
+          <i class="bi bi-person"></i>
+        </div>
+        <div class="content-box">
+          <h2>Owner Name: {{ hotelOwner.name }}</h2>
+          <p>Email: {{ hotelOwner.email }}</p>
+          <p>Mobile No: {{ hotelOwner.mobileNo }}</p>
+          <p>Address: {{ hotelOwner.addr }}</p>
+          <p>Approved by Admin: {{ hotelOwner.aprovedbyadmin }}</p>
+        </div>
+        <button
+          class="action-button btn btn-warning"
+          (click)="changeHotelOwnerStatus(hotelOwner)"
+        >
+          Change Status
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

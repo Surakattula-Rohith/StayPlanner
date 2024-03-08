@@ -1,0 +1,70 @@
+<div class="body">
+  <div class="example-form">
+    <h2 class="heading">Add new Customer</h2>
+    <input
+      type="number"
+      required
+      placeholder="Enter Customer ID"
+      [(ngModel)]="customer.customerId"
+      pattern="[A-Za-z0-9]+"
+    />
+    <br /><br />
+    <input
+      type="text"
+      required
+      placeholder="Enter Customer AadharNumber"
+      [(ngModel)]="customer.aadhar"
+      pattern="[0-9]"
+    />
+    <br /><br />
+    <input
+      type="text"
+      required
+      placeholder="Enter Customer Name"
+      [(ngModel)]="customer.name"
+      pattern="[A-Za-z ]+"
+    />
+    <br /><br />
+    <input
+      type="email"
+      required
+      placeholder="Enter Customer Email"
+      [(ngModel)]="customer.email"
+      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
+    />
+    <br />
+    <input
+      type="email"
+      required
+      placeholder="Enter Moblie Number"
+      [(ngModel)]="customer.phoneNo"
+      pattern="[0-9]{10}"
+    />
+    <br /><br />
+    <input
+      type="text"
+      required
+      placeholder="Enter Date-Of-Birth"
+      [(ngModel)]="customer.dob"
+      pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}"
+    />
+    <br /><br />
+    <input
+      type="text"
+      required
+      placeholder="Enter Customer Address"
+      [(ngModel)]="customer.address"
+    />
+    <br /><br />
+    <button (click)="addCustomer()">Done</button>
+  </div>
+  <div class="image-container">
+    <img
+      src="https://imgs.search.brave.com/oWXAv2YCXUEpbho0mf_tJTr7Ra7BFR2PZ7--enyRlZ4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/eWVzaG90ZWxzLmdy/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzEyL2x1eHVyeS1r/b2xvbmFraS1ob3Rl/bC1hdGhlbnMtOC0x/LTYwMHg3NTAuanBn"
+    />
+  </div>
+
+  <br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+<br /><br /><br />

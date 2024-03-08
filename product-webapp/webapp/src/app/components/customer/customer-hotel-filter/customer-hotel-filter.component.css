@@ -1,0 +1,138 @@
+/* Styles for the main container */
+.body {
+  /* font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  max-width: 800px; */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dafba8;
+  background-image: url('https://archello.com/thumbs/images/2020/07/07/PHTAA-RENO-Hotel-14.1594116845.9167.jpg?fit=crop&w=1240&h=627');
+  background-size: cover; /* Set the background image to cover the container */
+ 
+  
+
+}
+.hotel-icon {
+  width: 50px; /* Adjust the width to your preference */
+  height: 50px; /* Adjust the height to your preference */
+  border-radius: 50%; /* Make the image round */
+  object-fit: cover; /* Ensure the image fills the circle */
+}
+
+/* Styles for the selection section */
+.selection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+.selection select,
+.selection input {
+  text-align: center;
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: block;
+  /* width: 50%; */
+  align-items: center;
+  width: 500px;
+}
+
+.selection button {
+  padding: 8px 16px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.selection button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  width: 300px;
+
+  background-image: url('https://img.freepik.com/vrije-vector/neutrale-zachte-abstracte-aquarel-achtergrond_53876-100960.jpg?w=996&t=st=1692739432~exp=1692740032~hmac=fe5374df1316c65e18df270a57e4a3cfedf01b0cbd2e53ffddf6f70368004cb2');
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-image {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFMIFJlGKJPd4UjZoj7XVsD1mPoIsBcVBofQ&usqp=CAU');
+  background-size: cover; 
+}
+
+.card-content {
+  margin-top: 10px;
+}
+
+.card-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #00b306;
+}
+
+/* Styles for the content that appears after searching */
+.card-container.show-content {
+  display: block;
+  margin-top: 20px;
+}
+

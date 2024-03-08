@@ -1,0 +1,82 @@
+.body{
+  /* background-image: url('path/to/your/image.jpg'); */
+  /* background-size: cover;  */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+}
+.div1 {
+  height: 90.5%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #ffc107; */
+   background-image: url('https://imgs.search.brave.com/UOB6dz7y71oAs5bEJq66pVfJtUQ8E3LPeOEaweF3BLc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYWxwaGFjb2Rl/cnMuY29tLzQzOS80/MzkxOTEuanBn');
+   overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.div2 {
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 30px;
+  opacity: 0.99;
+  background-color: #f0f0f0; /* Light gray background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.div2:hover {
+  background-color: #ffffff; /* White background on hover */
+  opacity: 1;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+/* .heading{
+  background-color: #673ab7;
+  margin-bottom: 0 !important;
+  padding:  15px !important ;
+  color: aliceblue;
+  overflow: hidden;
+} */
+
+.heading {
+  background-color: #673ab7;
+  margin-bottom: 0 !important;
+  padding: 15px !important;
+  color: aliceblue;
+  overflow: hidden;
+  text-align: center; /* Centers the text horizontally */
+  
+  font-size: 24px; /* Increases the font size */
+  font-weight: bold; /* Makes the text bold */
+  font-family: Arial, Helvetica, sans-serif;
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+
+
+.btn1 {
+  background-color: #673ab7;
+  color: aliceblue;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.btn1:hover {
+  background-color: #512da8;
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn1:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(103, 58, 183, 0.8);
+}

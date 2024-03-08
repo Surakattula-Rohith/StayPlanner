@@ -1,0 +1,40 @@
+<div style="">
+  <mat-toolbar color="primary">
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
+    >
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" class="matMenulist">
+      <button mat-menu-item class="custom-menu-item">
+        <a routerLink="customer-register">Customer-Register</a>
+      </button>
+      <button mat-menu-item class="custom-menu-item">
+        <a routerLink="customer-login">Customer-Login</a>
+      </button>
+      <button mat-menu-item class="custom-menu-item">
+        <a routerLink="customer-add-customer">Customer-Add-Customer</a>
+        </button
+      ><button mat-menu-item class="custom-menu-item">
+        <a routerLink="customer-homepage">Customer-HomePage</a>
+      </button>
+      <button mat-menu-item class="custom-menu-item">
+        <a routerLink="customer-booking">Customer-Booking</a>
+      </button>
+      <button mat-menu-item class="custom-menu-item">
+        <a (click)="onlogout()">Customer-Logout</a>
+      </button>
+    </mat-menu>
+    <span>Stay-Planner</span>
+    <span class="example-spacer"></span>
+
+    <button class="btn btn-warning m-2" (click)="navigateToAdmin()">
+      Admin
+    </button>
+    <button class="btn btn-warning m-2" (click)="navigateToHotelOwner()">
+      HotelOwner
+    </button>
+  </mat-toolbar>
+</div>

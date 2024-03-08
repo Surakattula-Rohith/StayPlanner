@@ -1,0 +1,221 @@
+<div class="body">
+  <form class="example-form" (ngSubmit)="getbyid(box.value)">
+    <h2 class="heading">Hotel Details</h2>
+    <input
+      type="text"
+      required
+      #box
+      matInput
+      placeholder="Enter hotel Id"
+      name="hotelId"
+      [(ngModel)]="hotelId"
+      pattern="[A-Za-z0-9]+"
+    />
+    <br />
+    <button type="submit" class="btn btn-primary">Enter</button>
+  </form>
+</div>
+<div class="body">
+  <div class="example-form">
+    <h2 class="heading">Room Details</h2>
+    <form
+      (ngSubmit)="submitForm()"
+      enctype="multipart/form-data"
+      class="example-form"
+    >
+      <input
+        type="text"
+        required
+        matInput
+        placeholder="Enter Room Number"
+        name="roomId"
+        [(ngModel)]="roomId"
+        pattern="[A-Za-z0-9]+"
+      />
+
+      <input
+        type="text"
+        required
+        matInput
+        placeholder="Enter Bed type"
+        name="bedType"
+        [(ngModel)]="bedType"
+      />
+      <input
+        type="text"
+        required
+        matInput
+        placeholder="Enter Ac type"
+        name="acNonAc"
+        [(ngModel)]="acNonAc"
+      />
+      <input
+        type="text"
+        required
+        matInput
+        placeholder="Enter wifi"
+        name="wifi"
+        [(ngModel)]="wifi"
+      />
+      <input
+        type="text"
+        required
+        matInput
+        placeholder="Enter Maintanance"
+        name=" maintanance"
+        [(ngModel)]="maintanance"
+      />
+      <input
+        type="text"
+        required
+        matInput
+        placeholder="Enter Price"
+        name="price"
+        [(ngModel)]="price"
+        pattern="[0-9]"
+      />
+
+      <div class="form-group col-md-20">
+        <input
+          type="file"
+          class="form-control"
+          name="photo"
+          (change)="imageUpload($event)"
+          required
+        />
+      </div>
+
+      <br /><br />
+      <button type="submit" class="btn btn-primary">Add Room</button>
+    </form>
+  </div>
+  <br /><br /><br /><br /><br />
+</div>
+
+<!-- <div class="container bg-light p-3">
+  <div class="container border">
+    <div class="container mt-3">
+      <h2 class="text-center mt-2 p-3 bg-dark text-white">
+        Enter Hotel data
+      </h2>
+<div class="main m-3">
+  <form class="example-form"   (ngSubmit)="getbyid(box.value)">
+    <mat-form-field class="example-full-width">
+      <mat-label>Hotel Number</mat-label>
+      <input matInput placeholder="Enter hotel number" required #box >
+    </mat-form-field>
+    <br>
+    <button type="submit" mat-raised-button color="primary">Enter</button>
+  </form>
+</div>
+    </div>
+  </div>
+</div> -->
+<!-- 
+  <div class="container bg-light p-3">
+    <div class="container border">
+      <div class="container mt-3">
+        <h2 class="text-center mt-2 p-3 bg-dark text-white">
+          Enter New Room details
+        </h2>
+        <form (ngSubmit)="submitForm()" enctype="multipart/form-data" class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Enter Room Id</mat-label>
+            <input
+              type="text"
+              required
+              matInput
+              placeholder="Ex. 101"
+              name="roomId"
+              [(ngModel)]="roomId"
+            />
+          </mat-form-field>
+
+          <div class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Enter Room bedType</mat-label>
+            <input
+              type="text"
+              required
+              matInput
+              placeholder="Ex. John Doe."
+              name="bedType"
+              [(ngModel)]="bedType"
+            />
+          </mat-form-field>
+        </div>
+  
+          <div class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter Room acNonAc</mat-label>
+              <input
+                type="text"
+                required
+                matInput
+                placeholder="Ex. 9420932328"
+                name="acNonAc"
+                [(ngModel)]="acNonAc"
+              />
+            </mat-form-field>
+          </div>
+  
+          <div class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter Room Wifi</mat-label>
+              <input
+                type="text"
+                required
+                matInput
+                placeholder="Ex. BHARAT-123"
+                name="wifi"
+                [(ngModel)]="wifi"
+              />
+            </mat-form-field>
+          </div>
+          <div class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter Room  maintanance</mat-label>
+              <input
+                type="text"
+                required
+                matInput
+                placeholder="Ex. BHARAT-123"
+                name=" maintanance"
+                [(ngModel)]="maintanance"
+              />
+            </mat-form-field>
+          </div>
+
+         
+          <div class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Enter Room Price</mat-label>
+              <input
+                type="text"
+                required
+                matInput
+                placeholder="Ex. 50,000"
+                name="price"
+                [(ngModel)]="price"
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="photo">Upload Photo</label>
+            <input
+              type="file"
+              class="form-control"
+              name="photo"
+              (change)="imageUpload($event)" 
+              required
+            />
+          </div>
+          <br /><br />
+          <button type="submit" mat-raised-button color="primary">Add Room</button>
+          <br>
+        </form>
+        <br />
+        <br /><br /><br /><br /><br /><br />
+      </div>
+    </div>
+  </div> -->

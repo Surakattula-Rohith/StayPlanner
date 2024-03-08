@@ -1,0 +1,16 @@
+<div class="container mt-4">
+    <div class="warp">
+        <mat-card class="example-card m-3" *ngFor="let item of getJsonValue"> 
+            <mat-card-content>
+                <h2>Customer Id:{{item.customerId}}</h2>
+                <h2>Hotel Id:{{item.hotelId}}</h2>
+                <h2>Review Id:{{item.reviewId}}</h2>
+                <h2>Review Description:{{item.reviewDescription}}</h2>
+                <h2>Rating:{{item.rating}}</h2>
+                <h2>maintenance:{{item.maintenance}}</h2>
+                <h2>WIFI:{{item.wifi}}</h2>
+                <h2>affordability:{{item.affordability}}</h2>
+            </mat-card-content>
+        </mat-card>
+    </div>
+  </div>

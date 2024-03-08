@@ -1,0 +1,95 @@
+/* Style for the custom container */
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styling */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the custom container */
+  .custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 72vh;
+    /* background-image: url('https://www.home-designing.com/wp-content/uploads/2022/09/cream-sofa.jpg'); */
+    background-size: cover;
+      background-color: rgba(247, 241, 207, 0.8);
+     background-blend-mode: lighten; 
+
+  }
+  
+  /* Style for the custom form */
+  .custom-form {
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f1ac70;
+    background-image: url(https://www.home-designing.com/wp-content/uploads/2022/09/gold-kitchen.jpg)
+  }
+  
+  /* Style for form headings */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+  }
+  
+  /* Style for form labels */
+  .form-label {
+    font-size: 16px;
+    color: #333333;
+  }
+  
+  /* Style for form inputs */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333333;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .form-control:focus {
+    background-color: #f0f0f0;
+  }
+  
+  /* Style for error messages */
+  .small-error {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #dc3545;
+  }
+  
+  /* Style for submit button */
+  .custom-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .custom-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .custom-btn:hover {
+    background-color: #0056b3;
+  }
+  

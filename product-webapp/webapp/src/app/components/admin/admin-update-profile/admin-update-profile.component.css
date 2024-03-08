@@ -1,0 +1,62 @@
+/* Add this in your style file (e.g., styles.css) */
+.body{
+    background-image: url('https://roomcritic.files.wordpress.com/2012/05/hotel_puerta_america_m060111_d.jpg'); 
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 120vh;
+  }
+  .example-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to top, #a7c5eb, #5e95db);
+  }
+  
+  .example-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .example-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+  }
+  
+  .example-form input:focus {
+    border-color: #007bff;
+  }
+  
+  .example-form button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .example-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Optional: Adjust spacing and margins as needed */
+  .example-form br {
+    clear: both;
+  }
+  

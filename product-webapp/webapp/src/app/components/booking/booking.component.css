@@ -1,0 +1,108 @@
+/* styles.css */
+
+/* Style for the form container */
+.body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* background-image: url('https://wallpapercave.com/dwp2x/wp9508300.jpg'); */
+    
+     
+
+  }
+
+
+  
+  /* Style for the form heading */
+  .heading {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for input fields */
+  input[type="text"],
+  input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  /* Placeholder style */
+  input::placeholder {
+    color: #999;
+  }
+  
+  /* Style for the "Done" button */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for button hover */
+  button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 600px) {
+    .body {
+      margin: 10px;
+    }
+  }
+  
+  .popup {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .body {
+    display: flex;
+    flex-direction: row;
+  
+  }
+  
+  .example-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #d8dafc ;
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/d1/f7/63/the-leela-bhartiya-city.jpg?w=1400&h=-1&s=1');
+   background-blend-mode: luminosity;
+  }
+  
+  /* .image-container {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: 100vh;
+    object-fit: cover; 
+  } */
+  

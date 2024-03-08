@@ -1,0 +1,63 @@
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8076/eureka
+#    register-with-eureka: true
+#    fetch-registry: true
+
+server:
+  port: 8091
+
+spring:
+  application:
+    name: "api-gateway"
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      routes:
+        - id: admin
+          uri: http://localhost:8089
+          predicates:
+            - Path=/Admin/**
+        - id: Authentication-App
+          uri: http://localhost:8081
+          predicates:
+            - Path=/user/**
+        - id: Customer-App
+          uri: http://localhost:8090
+          predicates:
+            - Path=/customers/**
+        - id: hotel
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/v1/**
+        - id: hotel
+          uri: http://localhost:8083
+          predicates:
+            - Path=/hotel/**
+        - id: hotel
+          uri: http://localhost:8083
+          predicates:
+            - Path=/room/**
+        - id: Payment-App
+          uri: http://localhost:8080
+          predicates:
+            - Path=/ps/**
+        - id: Review
+          uri: http://localhost:8085
+          predicates:
+            - Path=/reviews/**
+        - id: Booking-App
+          uri: http://localhost:8079
+          predicates:
+            - Path=/api/**
+        - id: notificationservice
+          uri: http://localhost:9095
+          predicates:
+            - Path=/email/**
+
+#  main:
+#    web:
+#      -application:
+#        -type=reactive
